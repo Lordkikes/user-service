@@ -24,8 +24,8 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(userSave);
     }
 
-    @GetMapping("/getUserById")
-    public ResponseEntity<UserEntity> getUser(@PathVariable Long userId){
+    @GetMapping("/getUserById/{userId}")
+    public ResponseEntity<UserEntity> getUser(@PathVariable String userId){
         UserEntity user = userService.getUser(userId);
         return ResponseEntity.ok(user);
     }

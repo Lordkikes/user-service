@@ -8,5 +8,5 @@ public interface UserService {
 
     UserEntity saveUser(UserEntity user);
     List<UserEntity> getAllUsers();
-    UserEntity getUser(Long userId);
+    UserEntity getUser(String userId);
 }
