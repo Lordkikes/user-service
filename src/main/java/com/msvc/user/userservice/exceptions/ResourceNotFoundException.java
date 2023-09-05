@@ -1,4 +1,4 @@
-package com.msvc.user.userservice.exception;
+package com.msvc.user.userservice.exceptions;
 
 public class ResourceNotFoundException extends RuntimeException{
 
